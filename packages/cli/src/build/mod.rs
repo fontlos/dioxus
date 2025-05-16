@@ -10,6 +10,7 @@
 
 mod builder;
 mod context;
+mod icon;
 mod patch;
 mod request;
 mod tools;
