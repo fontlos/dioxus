@@ -599,7 +599,7 @@ dependencies = [
  "windows-sys 0.52.0",
  "x509",
  "x509-certificate",
- "xml-rs",
+ "xml-rs 0.8.28",
  "yasna",
  "zeroize",
  "zip 0.6.6",
@@ -647,7 +647,7 @@ dependencies = [
  "thiserror 1.0.69",
  "url",
  "x509-certificate",
- "xml-rs",
+ "xml-rs 0.8.28",
  "xz2",
 ]
 
@@ -5397,6 +5397,7 @@ dependencies = [
  "hyper-rustls 0.27.7",
  "hyper-util",
  "ignore",
+ "image",
  "include_dir",
  "itertools 0.14.0",
  "krates",
@@ -5420,6 +5421,7 @@ dependencies = [
  "rayon",
  "regex",
  "reqwest 0.12.24",
+ "resvg",
  "rustls 0.23.34",
  "self-replace",
  "self_update",
@@ -5458,6 +5460,7 @@ dependencies = [
  "wasm-split-cli",
  "wasmparser 0.235.0",
  "which 8.0.0",
+ "xml-rs 1.0.0",
 ]
 
 [[package]]
@@ -8162,7 +8165,7 @@ checksum = "1a95dfc23a2b4a9a2f5ab41d194f8bfda3cabec42af4e39f08c339eb2a0c124d"
 dependencies = [
  "khronos_api",
  "log",
- "xml-rs",
+ "xml-rs 0.8.28",
 ]
 
 [[package]]
@@ -14046,6 +14049,23 @@ dependencies = [
 ]
 
 [[package]]
+name = "resvg"
+version = "0.45.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a8928798c0a55e03c9ca6c4c6846f76377427d2c1e1f7e6de3c06ae57942df43"
+dependencies = [
+ "gif",
+ "image-webp",
+ "log",
+ "pico-args",
+ "rgb",
+ "svgtypes",
+ "tiny-skia",
+ "usvg",
+ "zune-jpeg",
+]
+
+[[package]]
 name = "rfc6979"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -14988,7 +15008,7 @@ dependencies = [
  "log",
  "serde",
  "thiserror 1.0.69",
- "xml-rs",
+ "xml-rs 0.8.28",
 ]
 
 [[package]]
@@ -15000,7 +15020,7 @@ dependencies = [
  "log",
  "serde",
  "thiserror 1.0.69",
- "xml-rs",
+ "xml-rs 0.8.28",
 ]
 
 [[package]]
@@ -17231,6 +17251,7 @@ dependencies = [
  "bytemuck",
  "cfg-if",
  "log",
+ "png",
  "tiny-skia-path",
 ]
 
@@ -20190,10 +20211,25 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b9cc00251562a284751c9973bace760d86c0276c471b4be569fe6b068ee97a56"
 
 [[package]]
+name = "xml"
+version = "1.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "838dd679b10a4180431ce7c2caa6e5585a7c8f63154c19ae99345126572e80cc"
+
+[[package]]
 name = "xml-rs"
 version = "0.8.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3ae8337f8a065cfc972643663ea4279e04e7256de865aa66fe25cec5fb912d3f"
+
+[[package]]
+name = "xml-rs"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3a56132a0d6ecbe77352edc10232f788fc4ceefefff4cab784a98e0e16b6b51"
+dependencies = [
+ "xml",
+]
 
 [[package]]
 name = "xml5ever"
